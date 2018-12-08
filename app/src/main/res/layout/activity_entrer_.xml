@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    tools:context="com.khoudourmohamedelamine.hp.blood_d.Entrer_A"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="تسجيل الدخول"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:fontFamily="monospace"
+        android:textColor="@color/colorView"/>
+
+    <EditText
+        android:id="@+id/user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="عامر أيوب"
+        android:textSize="10dp"
+        android:fontFamily="monospace"
+        android:drawableRight="@drawable/user"
+        />
+
+    <EditText
+        android:id="@+id/pass_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="*********"
+        android:textSize="10dp"
+        android:fontFamily="monospace"
+        android:drawableRight="@drawable/pass"
+        android:textAlignment="viewEnd"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" هل نسيت كلمة السر"
+        android:textSize="10dp"
+        android:fontFamily="monospace"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="تسجيل الدخول"
+        android:textSize="12dp"
+        android:textAlignment="center"
+        android:fontFamily="monospace"
+        android:background="@drawable/btn_d"
+        android:textColor="#fff"
+        android:onClick="Sign_in"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_d"
+        android:fontFamily="monospace"
+        android:paddingTop="10dp"
+        android:text="إنشاء حساب جديد "
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="12dp"
+        android:onClick="Login"/>
+
+    </LinearLayout>
+</RelativeLayout>
